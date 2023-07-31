@@ -1,0 +1,1608 @@
+<?xml version="1.0"?>
+<!--Velocio Builder 1.1-->
+<!--www.Velocio.net-->
+<VelocioNetworks IPAddress="">
+  <Setup ProjectType="FlowChart" />
+  <Connections>
+    <Connection sKey="vFactoryPage" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="LightCurtain" iPort="0" iPin="1" iDebounce="15" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitA2" iPort="0" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Servo1Error" iModbusStart="3" iPort="0" iPin="3" iDebounce="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Servo2Error" iModbusStart="4" iPort="0" iPin="4" iDebounce="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="SpindleError" iPort="0" iPin="5" iDebounce="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="CycleStartButton" iModbusStart="5" iPort="0" iPin="6" iDebounce="50" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="ClampCylHomeSw" iPort="1" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="ClampCylSw" iModbusStart="1" iPort="1" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="LocatorSlideHome" iPort="1" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="LocatorSlideSw" iModbusStart="2" iPort="1" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="EstopSig" iPort="1" iPin="5" iDebounce="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB6" iPort="1" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Motor1HomeSw" iModbusStart="6" iPort="2" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="Motor2HomeSw" iModbusStart="7" iPort="2" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="VacuumSwitch" iPort="2" iPin="4" iDebounce="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC5" iPort="2" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC6" iPort="2" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="OutBitD1" iPort="3" iPin="1" motorControlPinType="stepperOut" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitD2" iPort="3" iPin="2" motorControlPinType="stepperDirection" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitD3" iPort="3" iPin="3" motorControlPinType="stepperOut2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitD4" iPort="3" iPin="4" motorControlPinType="stepperDirection2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="CleanerVacRelay" iPort="3" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="ClampValve" iPort="3" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="K50Red" iPort="4" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="K50Green" iPort="4" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="K50Yellow" iPort="4" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="LocatorValve" iPort="4" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE5" iPort="4" iPin="5" motorControlPinType="stepperOut3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE6" iPort="4" iPin="6" motorControlPinType="stepperDirection3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="VacuumValve" iPort="5" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="DumpValve" iPort="5" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="SerialRXF-1" bIsSerialRX="True" iPort="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="SerialTXF-1" bISSerialTX="True" iPort="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="state" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="StartupDelay" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ErrorNum" iModbusStart="9" iModbusEnd="9" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="Position1" iModbusStart="14" iModbusEnd="15" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="HomeSpeed" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="Position2" iModbusStart="16" iModbusEnd="17" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CutterSpinup" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ClampTimeout" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="LocatorSLTimeout" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="PrecutMvCts" iModbusStart="12" iModbusEnd="13" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="Cut1MvCts" iModbusStart="1" iModbusEnd="2" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CutBackMvCts" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="Cut2MvCts" iModbusStart="3" iModbusEnd="4" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CutSpeed" iModbusStart="10" iModbusEnd="10" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="PrecutSpeed" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="TargetPos" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CutCycleCounter" iModbusStart="7" iModbusEnd="7" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="CutCyclesReqd" iModbusStart="8" iModbusEnd="8" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="ResetTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="SpindleSpeed" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="HomeOffset" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="SpindlePos" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CycleCounter" iModbusStart="18" iModbusEnd="19" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="InBitC3" iPort="2" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="SpindleRPM" iModbusStart="20" iModbusEnd="21" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="PartCounter" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="NegCutBack" iModbusStart="5" iModbusEnd="6" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="RedFlash" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="PolishDwell" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="PolishTime" iModbusStart="22" iModbusEnd="23" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ExCounter" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="VacuumDelay" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="VacDelayTime" iModbusStart="24" iModbusEnd="25" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="RehomeCycleCount" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="RehomeCTS" iModbusStart="11" iModbusEnd="11" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="ExternalCounter" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CleanerVacTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="CleanerTime" iModbusStart="26" iModbusEnd="26" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+  </Connections>
+  <Modbus />
+  <SubroutineInputs cellsHeigh="0" />
+  <Cells>
+    <start rung="0" row="1" column="2" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCopy rung="0" row="5" column="2" cellsHeigh="7" iSortedIndex="0" CopyType="standard">
+      <eKeySource sAddress="9" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1000" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="10000" sIndex="" dtAddress="I16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Red" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="DumpValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="DumpValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="HomeSpeed" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eKeyDestination sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <NO rung="0" row="40" column="13" cellsHeigh="-1" iSortedIndex="38">
+      <eAddress1 sAddress="Servo1Error" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="44" column="13" cellsHeigh="-1" iSortedIndex="44">
+      <eAddress1 sAddress="Servo2Error" sIndex="" dtAddress="Bit" />
+    </NO>
+    <flowComment rung="0" row="42" column="10" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Check errors every cycle&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="40" column="17" cellsHeigh="3" iSortedIndex="39" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="7" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <wireRouter rung="0" row="51" column="22" cellsHeigh="-1" iSortedIndex="-1" />
+    <Equal rung="0" row="57" column="7" cellsHeigh="-1" iSortedIndex="14">
+      <eAddress1 sAddress="10" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <coilCopy rung="0" row="44" column="17" cellsHeigh="3" iSortedIndex="45" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="8" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <flowComment rung="0" row="57" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Check that clamp is open&#xA;Home slider motors&#xA;Start by moving forward 4000&#xA;counts (about 1&quot;)&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="57" column="26" cellsHeigh="3" iSortedIndex="19" CopyType="standard">
+      <eKeySource sAddress="20" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="RehomeCycleCount" sIndex="" dtAddress="I16" />
+    </coilCopy>
+    <Equal rung="0" row="66" column="7" cellsHeigh="-1" iSortedIndex="29">
+      <eAddress1 sAddress="20" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <NC rung="0" row="66" column="11" cellsHeigh="-1" iSortedIndex="30">
+      <eAddress1 sAddress="Motor1HomeSw" sIndex="" dtAddress="Bit" />
+    </NC>
+    <flowComment rung="0" row="66" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Home slider motors&#xA;If slider home switch turns off, &#xA;then stop motor&#xA;(independently) so we can go&#xA;back immediately&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="74" column="7" cellsHeigh="-1" iSortedIndex="40">
+      <eAddress1 sAddress="30" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="74" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Home slider motors&#xA;Now that we're off the home&#xA;switch, go back towards it&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="74" column="26" cellsHeigh="3" iSortedIndex="43" CopyType="standard">
+      <eKeySource sAddress="40" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="78" column="7" cellsHeigh="-1" iSortedIndex="46">
+      <eAddress1 sAddress="40" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="78" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Home slider motors&#xA;Stop motors (individually)&#xA;when home switch hits&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="109" column="7" cellsHeigh="-1" iSortedIndex="72">
+      <eAddress1 sAddress="100" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="109" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="READY state&#xA;Wait for CycleStart button&#xA;Once pressed, set K50 light to&#xA;orange (Red + Yellow)">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="116" column="7" cellsHeigh="-1" iSortedIndex="78">
+      <eAddress1 sAddress="200" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="116" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state&#xA;Turn on Vacuum&#xA;Clamp down on Part&#xA;Spin up cutter motor for 2&#xA;seconds, if needed (skip to 220&#xA;if already on)">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="116" column="26" cellsHeigh="3" iSortedIndex="82" CopyType="standard">
+      <eKeySource sAddress="220" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="127" column="7" cellsHeigh="-1" iSortedIndex="89">
+      <eAddress1 sAddress="220" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="127" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state&#xA;&#xA;Start clamp cylinder timeout&#xA;timer">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilTimer rung="0" row="127" column="15" cellsHeigh="3" iSortedIndex="90" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ClampTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="127" column="18" cellsHeigh="3" iSortedIndex="91" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ClampTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="127" column="26" cellsHeigh="3" iSortedIndex="92" CopyType="standard">
+      <eKeySource sAddress="230" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="131" column="7" cellsHeigh="-1" iSortedIndex="93">
+      <eAddress1 sAddress="230" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="131" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state&#xA;&#xA;Check clamp cylinder, then&#xA;actuate locator slide cylinder&#xA;and start its timer">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="138" column="7" cellsHeigh="-1" iSortedIndex="100">
+      <eAddress1 sAddress="240" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="138" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state&#xA;Check locator slide cylinder&#xA;and met, then start precut&#xA;move">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="146" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUTTING&#xA;Once at precut pos, start cut1&#xA;move (cycle is repeated 5&#xA;times)&#xA;CUT1MV">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="146" column="7" cellsHeigh="-1" iSortedIndex="108">
+      <eAddress1 sAddress="250" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <TimerCompare rung="0" row="138" column="10" cellsHeigh="-1" iSortedIndex="101" timerCompareType="Less" timeUnit="ms">
+      <eKeyTimerValue sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1000" sIndex="" dtAddress="I16" />
+    </TimerCompare>
+    <TimerCompare rung="0" row="131" column="10" cellsHeigh="-1" iSortedIndex="94" timerCompareType="Less" timeUnit="ms">
+      <eKeyTimerValue sAddress="ClampTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1000" sIndex="" dtAddress="I16" />
+    </TimerCompare>
+    <coilCopy rung="0" row="142" column="13" cellsHeigh="3" iSortedIndex="118" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NO rung="0" row="138" column="13" cellsHeigh="-1" iSortedIndex="102">
+      <eAddress1 sAddress="LocatorSlideSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="138" column="33" cellsHeigh="3" iSortedIndex="106" CopyType="standard">
+      <eKeySource sAddress="250" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+    </coilCopy>
+    <motionOut rung="0" row="138" column="28" cellsHeigh="3" iSortedIndex="105" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="138" column="23" cellsHeigh="3" iSortedIndex="104" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="138" column="16" cellsHeigh="3" iSortedIndex="103">
+      <eStoreIn sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="Position1" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="PrecutMvCts" sIndex="" dtAddress="I32" />
+      </Equation>
+    </coilCalc>
+    <coilCopy rung="0" row="131" column="32" cellsHeigh="3" iSortedIndex="99" CopyType="standard">
+      <eKeySource sAddress="240" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilTimer rung="0" row="131" column="27" cellsHeigh="3" iSortedIndex="98" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="131" column="23" cellsHeigh="3" iSortedIndex="97" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilReset rung="0" row="131" column="19" cellsHeigh="-1" iSortedIndex="96">
+      <eAddress1 sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <NO rung="0" row="131" column="14" cellsHeigh="-1" iSortedIndex="95">
+      <eAddress1 sAddress="ClampCylSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="135" column="14" cellsHeigh="3" iSortedIndex="107" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="154" column="7" cellsHeigh="-1" iSortedIndex="119">
+      <eAddress1 sAddress="260" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="154" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUTTING&#xA;Once at Cut1 pos, start&#xA;cut-back move&#xA;CUTBACKMV">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="158" column="7" cellsHeigh="-1" iSortedIndex="126">
+      <eAddress1 sAddress="270" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="158" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUTTING&#xA;Once at CutBack pos, start&#xA;Cut2 move&#xA;CUT2MV">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="166" column="7" cellsHeigh="-1" iSortedIndex="135">
+      <eAddress1 sAddress="280" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="166" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUTTING&#xA;Once at Cut2 pos, check if we&#xA;need to repeat back+cut2&#xA;loop, otherrwise finish cycle&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="175" column="7" cellsHeigh="-1" iSortedIndex="143">
+      <eAddress1 sAddress="300" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="175" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUT COMPLETE&#xA;Return cutter slide to home (0&#xA;position, set at end of previous&#xA;state)&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <motionOut rung="0" row="175" column="11" cellsHeigh="3" iSortedIndex="144" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="175" column="17" cellsHeigh="3" iSortedIndex="145" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <Equal rung="0" row="179" column="7" cellsHeigh="-1" iSortedIndex="149">
+      <eAddress1 sAddress="310" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <coilCopy rung="0" row="179" column="30" cellsHeigh="3" iSortedIndex="154" CopyType="standard">
+      <eKeySource sAddress="320" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCopy rung="0" row="175" column="30" cellsHeigh="3" iSortedIndex="147" CopyType="standard">
+      <eKeySource sAddress="310" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="SpindlePos" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <Equal rung="0" row="183" column="7" cellsHeigh="-1" iSortedIndex="155">
+      <eAddress1 sAddress="320" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <TimerCompare rung="0" row="183" column="11" cellsHeigh="-1" iSortedIndex="156" timerCompareType="Less" timeUnit="ms">
+      <eKeyTimerValue sAddress="ClampTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1000" sIndex="" dtAddress="I16" />
+    </TimerCompare>
+    <NO rung="0" row="183" column="15" cellsHeigh="-1" iSortedIndex="157">
+      <eAddress1 sAddress="ClampCylHomeSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="187" column="15" cellsHeigh="3" iSortedIndex="169" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilSet rung="0" row="183" column="19" cellsHeigh="-1" iSortedIndex="158">
+      <eAddress1 sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="183" column="23" cellsHeigh="3" iSortedIndex="159" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="183" column="30" cellsHeigh="3" iSortedIndex="161" CopyType="standard">
+      <eKeySource sAddress="330" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="190" column="7" cellsHeigh="-1" iSortedIndex="162">
+      <eAddress1 sAddress="330" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="179" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUT COMPLETE&#xA;Once cutter slide is home, turn&#xA;off vac, turn off clamp, start&#xA;timeout for declamp&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="183" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUT COMPLETE&#xA;Once declamp confirmed, turn&#xA;on locator slide and start&#xA;timeout timer&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="190" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state CUT COMPLETE&#xA;Once locator slide confirmed,&#xA;change LED back to green and&#xA;return to ready state&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="196" column="15" cellsHeigh="3" iSortedIndex="176" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <flowComment rung="0" row="211" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="ERROR state&#xA;ErrorNum is sent to HMI&#xA;Turn off things, then go to&#xA;state 1010 to handle&#xA;start-button reset (held for 3s)&#xA;so we don't hammer the IO&#xA;unnecessarily">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="215" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="ERROR state&#xA;Reset to INIT when cycle start&#xA;is held &gt;3s">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <Equal rung="0" row="226" column="7" cellsHeigh="-1" iSortedIndex="199">
+      <eAddress1 sAddress="1020" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <coilCopy rung="0" row="226" column="26" cellsHeigh="3" iSortedIndex="203" CopyType="standard">
+      <eKeySource sAddress="1010" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCopy rung="0" row="230" column="26" cellsHeigh="5" iSortedIndex="209" CopyType="standard">
+      <eKeySource sAddress="10" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Red" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <Equal rung="0" row="100" column="7" cellsHeigh="-1" iSortedIndex="65">
+      <eAddress1 sAddress="50" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <flowComment rung="0" row="100" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Wait for CycleStartButton to be&#xA;released (in case of an error&#xA;reset) before going to READY&#xA;state 100 (ie, force release&#xA;then repress)&#xA;">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <wireRouter rung="0" row="165" column="11" cellsHeigh="-1" iSortedIndex="-1" />
+    <NC rung="0" row="70" column="11" cellsHeigh="-1" iSortedIndex="32">
+      <eAddress1 sAddress="Motor2HomeSw" sIndex="" dtAddress="Bit" />
+    </NC>
+    <motionOut rung="0" row="70" column="15" cellsHeigh="3" iSortedIndex="33" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="66" column="15" cellsHeigh="3" iSortedIndex="31" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <NC rung="0" row="70" column="21" cellsHeigh="-1" iSortedIndex="34">
+      <eAddress1 sAddress="Motor1HomeSw" sIndex="" dtAddress="Bit" />
+    </NC>
+    <motionOut rung="0" row="78" column="15" cellsHeigh="3" iSortedIndex="48" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="82" column="15" cellsHeigh="3" iSortedIndex="50" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <NO rung="0" row="78" column="11" cellsHeigh="-1" iSortedIndex="47">
+      <eAddress1 sAddress="Motor1HomeSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="82" column="11" cellsHeigh="-1" iSortedIndex="49">
+      <eAddress1 sAddress="Motor2HomeSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="68" column="26" cellsHeigh="3" iSortedIndex="35" CopyType="standard">
+      <eKeySource sAddress="30" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NO rung="0" row="82" column="20" cellsHeigh="-1" iSortedIndex="51">
+      <eAddress1 sAddress="Motor1HomeSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <wireRouter rung="0" row="111" column="34" cellsHeigh="-1" iSortedIndex="-1" />
+    <NC rung="0" row="110" column="36" cellsHeigh="-1" iSortedIndex="83">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilCopy rung="0" row="118" column="35" cellsHeigh="3" iSortedIndex="84" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="5" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <wireRouter rung="0" row="108" column="40" cellsHeigh="-1" iSortedIndex="-1" />
+    <flowComment rung="0" row="117" column="41" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Light curtain check:&#xA;Check to see light curtain isn't&#xA;broken on every cycle while&#xA;running, Error if broken.">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <motionOut rung="0" row="57" column="21" cellsHeigh="3" iSortedIndex="18" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="4000" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="HomeSpeed" sIndex="" dtAddress="I32" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="57" column="16" cellsHeigh="3" iSortedIndex="17" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="4000" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="HomeSpeed" sIndex="" dtAddress="I32" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <NO rung="0" row="57" column="10" cellsHeigh="-1" iSortedIndex="15">
+      <eAddress1 sAddress="ClampCylHomeSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="57" column="13" cellsHeigh="-1" iSortedIndex="16">
+      <eAddress1 sAddress="LocatorSlideSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="60" column="26" cellsHeigh="3" iSortedIndex="37" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCopy rung="0" row="63" column="26" cellsHeigh="3" iSortedIndex="36" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilReset rung="0" row="116" column="11" cellsHeigh="-1" iSortedIndex="79">
+      <eAddress1 sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <flowComment rung="0" row="6" column="11" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="PrecutMvCts  12912&#xA;Cut1MvCts     122&#xA;CutBackMvCts -61&#xA;Cut2MvCts     183&#xA;PrecutSpeed  1693&#xA;CutSpeed      67">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <NC rung="0" row="41" column="33" cellsHeigh="-1" iSortedIndex="20">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilCopy rung="0" row="44" column="33" cellsHeigh="3" iSortedIndex="21" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="5" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <wireRouter rung="0" row="42" column="31" cellsHeigh="-1" iSortedIndex="-1" />
+    <wireRouter rung="0" row="85" column="32" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCopy rung="0" row="14" column="2" cellsHeigh="3" iSortedIndex="1" CopyType="standard">
+      <eKeySource sAddress="5250" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="HomeOffset" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <Equal rung="0" row="86" column="7" cellsHeigh="-1" iSortedIndex="55">
+      <eAddress1 sAddress="41" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <motionOut rung="0" row="86" column="11" cellsHeigh="3" iSortedIndex="56" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="HomeOffset" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="86" column="16" cellsHeigh="3" iSortedIndex="57" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="HomeOffset" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="PrecutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCopy rung="0" row="86" column="26" cellsHeigh="3" iSortedIndex="58" CopyType="standard">
+      <eKeySource sAddress="42" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="90" column="7" cellsHeigh="-1" iSortedIndex="59">
+      <eAddress1 sAddress="42" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <coilCopy rung="0" row="89" column="26" cellsHeigh="5" iSortedIndex="64" CopyType="standard">
+      <eKeySource sAddress="50" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="82" column="26" cellsHeigh="3" iSortedIndex="52" CopyType="standard">
+      <eKeySource sAddress="41" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="Position2" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <Equal rung="0" row="121" column="7" cellsHeigh="-1" iSortedIndex="86">
+      <eAddress1 sAddress="210" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <TimerCompare rung="0" row="121" column="11" cellsHeigh="-1" iSortedIndex="87" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="CutterSpinup" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="0" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilCopy rung="0" row="121" column="26" cellsHeigh="3" iSortedIndex="88" CopyType="standard">
+      <eKeySource sAddress="220" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <flowComment rung="0" row="121" column="1" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="TRIM state&#xA;&#xA;Skip this state, leftover from&#xA;spindles. &#xA;Wait for cutter spinup for 2&#xA;seconds, if needed">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <motionOut rung="0" row="175" column="23" cellsHeigh="3" iSortedIndex="146" iDeviceNumber="1" iMotorNumber="3">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <NO rung="0" row="48" column="13" cellsHeigh="-1" iSortedIndex="53">
+      <eAddress1 sAddress="SpindleError" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="48" column="17" cellsHeigh="3" iSortedIndex="54" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="6" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <motionOut rung="0" row="90" column="14" cellsHeigh="3" iSortedIndex="61" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <Equal rung="0" row="94" column="11" cellsHeigh="-1" iSortedIndex="62">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="HomeOffset" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="90" column="11" cellsHeigh="-1" iSortedIndex="60">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="HomeOffset" sIndex="" dtAddress="I32" />
+    </Equal>
+    <motionOut rung="0" row="94" column="15" cellsHeigh="3" iSortedIndex="63" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <Equal rung="0" row="146" column="10" cellsHeigh="-1" iSortedIndex="109">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <motionOut rung="0" row="146" column="31" cellsHeigh="3" iSortedIndex="114" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="146" column="26" cellsHeigh="3" iSortedIndex="113" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="146" column="19" cellsHeigh="3" iSortedIndex="112">
+      <eStoreIn sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="Position1" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="Cut1MvCts" sIndex="" dtAddress="I32" />
+      </Equation>
+    </coilCalc>
+    <coilSet rung="0" row="146" column="16" cellsHeigh="-1" iSortedIndex="111">
+      <eAddress1 sAddress="VacuumValve" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <Equal rung="0" row="146" column="13" cellsHeigh="-1" iSortedIndex="110">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <coilCopy rung="0" row="154" column="33" cellsHeigh="3" iSortedIndex="125" CopyType="standard">
+      <eKeySource sAddress="270" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <motionOut rung="0" row="154" column="28" cellsHeigh="3" iSortedIndex="124" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="154" column="23" cellsHeigh="3" iSortedIndex="123" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="154" column="16" cellsHeigh="3" iSortedIndex="122">
+      <eStoreIn sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="Position1" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="CutBackMvCts" sIndex="" dtAddress="I32" />
+      </Equation>
+    </coilCalc>
+    <Equal rung="0" row="154" column="13" cellsHeigh="-1" iSortedIndex="121">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="154" column="10" cellsHeigh="-1" iSortedIndex="120">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="158" column="13" cellsHeigh="-1" iSortedIndex="128">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="158" column="10" cellsHeigh="-1" iSortedIndex="127">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <LessEqual rung="0" row="166" column="16" cellsHeigh="-1" iSortedIndex="138">
+      <eAddress1 sAddress="CutCyclesReqd" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+    </LessEqual>
+    <Equal rung="0" row="166" column="13" cellsHeigh="-1" iSortedIndex="137">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="166" column="10" cellsHeigh="-1" iSortedIndex="136">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <coilSet rung="0" row="179" column="20" cellsHeigh="-1" iSortedIndex="152">
+      <eAddress1 sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="179" column="24" cellsHeigh="3" iSortedIndex="153" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ClampTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NC rung="0" row="100" column="11" cellsHeigh="-1" iSortedIndex="66">
+      <eAddress1 sAddress="CycleStartButton" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilTimer rung="0" row="100" column="14" cellsHeigh="3" iSortedIndex="67" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="100" column="17" cellsHeigh="3" iSortedIndex="68" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="100" column="20" cellsHeigh="-1" iSortedIndex="69" timerCompareType="Less" timeUnit="ms">
+      <eKeyTimerValue sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1000" sIndex="" dtAddress="I16" />
+    </TimerCompare>
+    <coilCopy rung="0" row="107" column="26" cellsHeigh="5" iSortedIndex="85" CopyType="standard">
+      <eKeySource sAddress="200" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Red" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+    </coilCopy>
+    <coilCopy rung="0" row="99" column="26" cellsHeigh="3" iSortedIndex="71" CopyType="standard">
+      <eKeySource sAddress="100" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NO rung="0" row="99" column="23" cellsHeigh="-1" iSortedIndex="70">
+      <eAddress1 sAddress="LocatorSlideHome" sIndex="" dtAddress="Bit" />
+    </NO>
+    <motionOut rung="0" row="116" column="21" cellsHeigh="3" iSortedIndex="81" iDeviceNumber="1" iMotorNumber="3">
+      <bStart value="True" />
+      <eMoveTo sAddress="100000000" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="SpindleSpeed" sIndex="" dtAddress="I32" />
+      <eStepperLocation sAddress="SpindlePos" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="116" column="14" cellsHeigh="3" iSortedIndex="80">
+      <eStoreIn sAddress="SpindleSpeed" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="SpindleRPM" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="60" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1600" sIndex="" dtAddress="I16" />
+      </Equation>
+    </coilCalc>
+    <coilCalc rung="0" row="162" column="16" cellsHeigh="3" iSortedIndex="133">
+      <eStoreIn sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+      <Equation>
+        <mathElement sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+      </Equation>
+    </coilCalc>
+    <coilCopy rung="0" row="162" column="24" cellsHeigh="3" iSortedIndex="134" CopyType="standard">
+      <eKeySource sAddress="280" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <wireRouter rung="0" row="39" column="34" cellsHeigh="-1" iSortedIndex="-1" />
+    <wireRouter rung="0" row="235" column="33" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCopy rung="0" row="150" column="31" cellsHeigh="3" iSortedIndex="117" CopyType="standard">
+      <eKeySource sAddress="260" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCalc rung="0" row="150" column="24" cellsHeigh="3" iSortedIndex="116">
+      <eStoreIn sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+      <Equation>
+        <mathElement sAddress="CutCycleCounter" sIndex="" dtAddress="I16" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+      </Equation>
+    </coilCalc>
+    <coilCalc rung="0" row="150" column="17" cellsHeigh="3" iSortedIndex="115">
+      <eStoreIn sAddress="CutBackMvCts" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="0" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="NegCutBack" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+      </Equation>
+    </coilCalc>
+    <motionOut rung="0" row="158" column="35" cellsHeigh="3" iSortedIndex="132" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <wireRouter rung="0" row="152" column="41" cellsHeigh="-1" iSortedIndex="-1" />
+    <wireRouter rung="0" row="130" column="41" cellsHeigh="-1" iSortedIndex="-1" />
+    <motionOut rung="0" row="158" column="30" cellsHeigh="3" iSortedIndex="131" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="CutSpeed" sIndex="" dtAddress="I16" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="158" column="23" cellsHeigh="3" iSortedIndex="130">
+      <eStoreIn sAddress="TargetPos" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="Position1" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="Cut2MvCts" sIndex="" dtAddress="I32" />
+      </Equation>
+    </coilCalc>
+    <coilCalc rung="0" row="158" column="16" cellsHeigh="3" iSortedIndex="129">
+      <eStoreIn sAddress="Cut2MvCts" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="Cut1MvCts" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="CutBackMvCts" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+      </Equation>
+    </coilCalc>
+    <Equal rung="0" row="207" column="7" cellsHeigh="-1" iSortedIndex="177">
+      <eAddress1 sAddress="999" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <motionOut rung="0" row="207" column="10" cellsHeigh="3" iSortedIndex="178" iDeviceNumber="1" iMotorNumber="3">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="207" column="15" cellsHeigh="3" iSortedIndex="179" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="207" column="20" cellsHeigh="3" iSortedIndex="180" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="False" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilReset rung="0" row="207" column="25" cellsHeigh="-1" iSortedIndex="181">
+      <eAddress1 sAddress="VacuumValve" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilTimer rung="0" row="207" column="28" cellsHeigh="3" iSortedIndex="182" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="RedFlash" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="206" column="34" cellsHeigh="5" iSortedIndex="184" CopyType="standard">
+      <eKeySource sAddress="1010" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Red" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="207" column="31" cellsHeigh="3" iSortedIndex="183" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="RedFlash" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="212" column="34" cellsHeigh="3" iSortedIndex="208" CopyType="standard">
+      <eKeySource sAddress="1020" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="212" column="31" cellsHeigh="3" iSortedIndex="207" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ResetTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="212" column="28" cellsHeigh="3" iSortedIndex="206" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ResetTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NC rung="0" row="212" column="25" cellsHeigh="-1" iSortedIndex="198">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <NO rung="0" row="212" column="22" cellsHeigh="-1" iSortedIndex="197">
+      <eAddress1 sAddress="CycleStartButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <Equal rung="0" row="212" column="7" cellsHeigh="-1" iSortedIndex="186">
+      <eAddress1 sAddress="1010" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <GreaterEqual rung="0" row="212" column="10" cellsHeigh="-1" iSortedIndex="187">
+      <eAddress1 sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="6" sIndex="" dtAddress="UI8" />
+    </GreaterEqual>
+    <TimerCompare rung="0" row="215" column="10" cellsHeigh="-1" iSortedIndex="188" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="RedFlash" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilReset rung="0" row="215" column="14" cellsHeigh="-1" iSortedIndex="189">
+      <eAddress1 sAddress="K50Red" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <Equal rung="0" row="219" column="7" cellsHeigh="-1" iSortedIndex="191">
+      <eAddress1 sAddress="1011" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <TimerCompare rung="0" row="219" column="10" cellsHeigh="-1" iSortedIndex="192" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="RedFlash" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="2" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <NO rung="0" row="219" column="22" cellsHeigh="-1" iSortedIndex="204">
+      <eAddress1 sAddress="CycleStartButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NC rung="0" row="219" column="25" cellsHeigh="-1" iSortedIndex="205">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilCopy rung="0" row="215" column="18" cellsHeigh="3" iSortedIndex="190" CopyType="standard">
+      <eKeySource sAddress="1011" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilSet rung="0" row="223" column="12" cellsHeigh="-1" iSortedIndex="193">
+      <eAddress1 sAddress="K50Red" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="223" column="15" cellsHeigh="3" iSortedIndex="194" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="RedFlash" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="223" column="18" cellsHeigh="3" iSortedIndex="195" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="RedFlash" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="223" column="22" cellsHeigh="3" iSortedIndex="196" CopyType="standard">
+      <eKeySource sAddress="1010" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilTimer rung="0" row="219" column="28" cellsHeigh="3" iSortedIndex="210" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ResetTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="219" column="31" cellsHeigh="3" iSortedIndex="211" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ResetTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="219" column="34" cellsHeigh="3" iSortedIndex="212" CopyType="standard">
+      <eKeySource sAddress="1020" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ClampValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="LocatorValve" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="166" column="36" cellsHeigh="3" iSortedIndex="142" CopyType="standard">
+      <eKeySource sAddress="300" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </coilCopy>
+    <coilTimer rung="0" row="166" column="20" cellsHeigh="3" iSortedIndex="139" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="PolishDwell" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="170" column="23" cellsHeigh="3" iSortedIndex="148" CopyType="standard">
+      <eKeySource sAddress="260" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilTimer rung="0" row="183" column="26" cellsHeigh="3" iSortedIndex="160" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ExCounter" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <wireRouter rung="0" row="173" column="41" cellsHeigh="-1" iSortedIndex="-1" />
+    <Equal rung="0" row="199" column="7" cellsHeigh="-1" iSortedIndex="170">
+      <eAddress1 sAddress="340" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <coilCopy rung="0" row="190" column="34" cellsHeigh="3" iSortedIndex="168" CopyType="standard">
+      <eKeySource sAddress="340" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilTimer rung="0" row="190" column="28" cellsHeigh="3" iSortedIndex="167" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="VacuumDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="190" column="24" cellsHeigh="3" iSortedIndex="166" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="VacuumDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="190" column="20" cellsHeigh="3" iSortedIndex="165" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ExCounter" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NO rung="0" row="190" column="15" cellsHeigh="-1" iSortedIndex="164">
+      <eAddress1 sAddress="LocatorSlideSw" sIndex="" dtAddress="Bit" />
+    </NO>
+    <TimerCompare rung="0" row="190" column="11" cellsHeigh="-1" iSortedIndex="163" timerCompareType="Less" timeUnit="ms">
+      <eKeyTimerValue sAddress="LocatorSLTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1000" sIndex="" dtAddress="I16" />
+    </TimerCompare>
+    <NC rung="0" row="109" column="19" cellsHeigh="-1" iSortedIndex="76">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <NO rung="0" row="109" column="15" cellsHeigh="-1" iSortedIndex="75">
+      <eAddress1 sAddress="CycleStartButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilReset rung="0" row="112" column="11" cellsHeigh="-1" iSortedIndex="74">
+      <eAddress1 sAddress="VacuumValve" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <TimerCompare rung="0" row="109" column="11" cellsHeigh="-1" iSortedIndex="73" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="VacuumDelay" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="VacDelayTime" sIndex="" dtAddress="I32" />
+    </TimerCompare>
+    <Equal rung="0" row="179" column="15" cellsHeigh="-1" iSortedIndex="151">
+      <eAddress1 sAddress="Position2" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <Equal rung="0" row="179" column="11" cellsHeigh="-1" iSortedIndex="150">
+      <eAddress1 sAddress="Position1" sIndex="" dtAddress="I32" />
+      <eAddress2 sAddress="TargetPos" sIndex="" dtAddress="I32" />
+    </Equal>
+    <TimerCompare rung="0" row="166" column="30" cellsHeigh="-1" iSortedIndex="141" timerCompareType="GreaterOrEqual" timeUnit="ms">
+      <eKeyTimerValue sAddress="PolishDwell" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="PolishTime" sIndex="" dtAddress="I32" />
+    </TimerCompare>
+    <coilTimer rung="0" row="166" column="24" cellsHeigh="3" iSortedIndex="140" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="PolishDwell" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="104" column="26" cellsHeigh="3" iSortedIndex="77" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="4" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="53" column="7" cellsHeigh="-1" iSortedIndex="6">
+      <eAddress1 sAddress="9" sIndex="" dtAddress="UI8" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </Equal>
+    <NC rung="0" row="53" column="10" cellsHeigh="-1" iSortedIndex="7">
+      <eAddress1 sAddress="LightCurtain" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilSet rung="0" row="53" column="13" cellsHeigh="-1" iSortedIndex="22">
+      <eAddress1 sAddress="DumpValve" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="53" column="16" cellsHeigh="3" iSortedIndex="23" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="53" column="19" cellsHeigh="3" iSortedIndex="24" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="53" column="26" cellsHeigh="3" iSortedIndex="26" CopyType="standard">
+      <eKeySource sAddress="10" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <TimerCompare rung="0" row="53" column="23" cellsHeigh="-1" iSortedIndex="25" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilSet rung="0" row="226" column="11" cellsHeigh="-1" iSortedIndex="200">
+      <eAddress1 sAddress="DumpValve" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <NC rung="0" row="226" column="19" cellsHeigh="-1" iSortedIndex="202">
+      <eAddress1 sAddress="CycleStartButton" sIndex="" dtAddress="Bit" />
+    </NC>
+    <TimerCompare rung="0" row="226" column="15" cellsHeigh="-1" iSortedIndex="201" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ResetTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="3" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilTimer rung="0" row="19" column="3" cellsHeigh="3" iSortedIndex="2" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="19" column="10" cellsHeigh="3" iSortedIndex="4" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="19" column="14" cellsHeigh="-1" iSortedIndex="5" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="StartupDelay" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="18" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <NC rung="0" row="36" column="13" cellsHeigh="-1" iSortedIndex="27">
+      <eAddress1 sAddress="EstopSig" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilCopy rung="0" row="36" column="17" cellsHeigh="3" iSortedIndex="28" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="5" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="DumpValve" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <flowComment rung="0" row="36" column="35" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Light curtain check while&#xA;homing, Error if broken while&#xA;motors are moving.">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <motionOut rung="0" row="74" column="21" cellsHeigh="3" iSortedIndex="42" iDeviceNumber="1" iMotorNumber="2">
+      <bStart value="True" />
+      <eMoveTo sAddress="-16000" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="HomeSpeed" sIndex="" dtAddress="I32" />
+      <eStepperLocation sAddress="Position2" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <motionOut rung="0" row="74" column="16" cellsHeigh="3" iSortedIndex="41" iDeviceNumber="1" iMotorNumber="1">
+      <bStart value="True" />
+      <eMoveTo sAddress="-16000" sIndex="" dtAddress="I32" />
+      <eAcceleration sAddress="HomeSpeed" sIndex="" dtAddress="I32" />
+      <eStepperLocation sAddress="Position1" sIndex="" dtAddress="I32" />
+      <bStoreLocationOfTransition value="False" />
+    </motionOut>
+    <coilCalc rung="0" row="199" column="10" cellsHeigh="3" iSortedIndex="171">
+      <eStoreIn sAddress="CycleCounter" sIndex="" dtAddress="I32" />
+      <Equation>
+        <mathElement sAddress="CycleCounter" sIndex="" dtAddress="I32" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+      </Equation>
+    </coilCalc>
+    <wireRouter rung="0" row="195" column="42" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCopy rung="0" row="198" column="37" cellsHeigh="5" iSortedIndex="185" CopyType="standard">
+      <eKeySource sAddress="100" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="K50Green" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Red" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="K50Yellow" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExternalCounter" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCalc rung="0" row="199" column="17" cellsHeigh="3" iSortedIndex="172">
+      <eStoreIn sAddress="RehomeCycleCount" sIndex="" dtAddress="I16" />
+      <Equation>
+        <mathElement sAddress="RehomeCycleCount" sIndex="" dtAddress="I16" />
+        <mathElement sAddress=" " sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="+" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1" sIndex="" dtAddress="UI8" />
+      </Equation>
+    </coilCalc>
+    <TimerCompare rung="0" row="199" column="28" cellsHeigh="-1" iSortedIndex="173" timerCompareType="GreaterOrEqual" timeUnit="ms">
+      <eKeyTimerValue sAddress="ExCounter" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="50" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilCopy rung="0" row="203" column="37" cellsHeigh="3" iSortedIndex="175" CopyType="standard">
+      <eKeySource sAddress="999" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="state" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ErrorNum" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <GreaterEqual rung="0" row="199" column="32" cellsHeigh="-1" iSortedIndex="174">
+      <eAddress1 sAddress="RehomeCycleCount" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="RehomeCTS" sIndex="" dtAddress="I16" />
+    </GreaterEqual>
+    <LessEqual rung="0" row="32" column="13" cellsHeigh="-1" iSortedIndex="13">
+      <eAddress1 sAddress="1000" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="state" sIndex="" dtAddress="UI16" />
+    </LessEqual>
+    <coilSet rung="0" row="202" column="24" cellsHeigh="-1" iSortedIndex="-1">
+      <eAddress1 sAddress="ExternalCounter" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <NO rung="0" row="24" column="13" cellsHeigh="-1" iSortedIndex="8">
+      <eAddress1 sAddress="VacuumSwitch" sIndex="" dtAddress="Bit" />
+    </NO>
+    <wireRouter rung="0" row="23" column="32" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilTimer rung="0" row="19" column="7" cellsHeigh="3" iSortedIndex="3" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="CleanerVacTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="28" column="13" cellsHeigh="-1" iSortedIndex="11" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="CleanerVacTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="CleanerTime" sIndex="" dtAddress="UI16" />
+    </TimerCompare>
+    <coilReset rung="0" row="28" column="16" cellsHeigh="-1" iSortedIndex="12">
+      <eAddress1 sAddress="CleanerVacRelay" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilSet rung="0" row="24" column="16" cellsHeigh="-1" iSortedIndex="9">
+      <eAddress1 sAddress="CleanerVacRelay" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <flowComment rung="0" row="26" column="10" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="Control part cleaner Vacuum on timer, every cycle." sText="Control part cleaner Vacuum&#xA;on timer, every cycle.">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilTimer rung="0" row="24" column="21" cellsHeigh="3" iSortedIndex="10" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="CleanerVacTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+  </Cells>
+  <FlowConnections>
+    <FlowConn From="0" Yes="1" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="1" Yes="109" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="2" Yes="5" dirYesFrom="right" dirYesTo="left" No="3" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="3" Yes="8" dirYesFrom="right" dirYesTo="left" No="122" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="5" Yes="6" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="6" Yes="219" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="7" Yes="99" dirYesFrom="right" dirYesTo="left" No="11" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="8" Yes="6" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="10" Yes="107" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="11" Yes="12" dirYesFrom="right" dirYesTo="left" No="14" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="12" Yes="84" dirYesFrom="right" dirYesTo="left" No="82" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="14" Yes="236" dirYesFrom="right" dirYesTo="left" No="17" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="16" Yes="107" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="17" Yes="88" dirYesFrom="right" dirYesTo="left" No="110" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="19" Yes="213" dirYesFrom="right" dirYesTo="left" No="21" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="21" Yes="103" dirYesFrom="right" dirYesTo="left" No="117" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="23" Yes="92" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="24" Yes="26" dirYesFrom="right" dirYesTo="left" No="29" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="26" Yes="27" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="27" Yes="28" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="28" Yes="92" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="29" Yes="36" dirYesFrom="right" dirYesTo="left" No="31" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="31" Yes="35" dirYesFrom="right" dirYesTo="left" No="34" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="34" Yes="128" dirYesFrom="right" dirYesTo="left" No="49" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="35" Yes="38" dirYesFrom="right" dirYesTo="left" No="37" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="36" Yes="47" dirYesFrom="right" dirYesTo="left" No="48" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="37" Yes="165" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="38" Yes="42" dirYesFrom="right" dirYesTo="left" No="165" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="39" Yes="165" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="40" Yes="39" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="41" Yes="40" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="42" Yes="41" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="43" Yes="165" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="44" Yes="43" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="45" Yes="44" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="46" Yes="45" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="47" Yes="46" dirYesFrom="right" dirYesTo="left" No="165" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="48" Yes="165" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="49" Yes="139" dirYesFrom="right" dirYesTo="left" No="51" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="51" Yes="141" dirYesFrom="right" dirYesTo="left" No="53" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="53" Yes="144" dirYesFrom="right" dirYesTo="left" No="55" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="55" Yes="57" dirYesFrom="right" dirYesTo="left" No="59" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="57" Yes="58" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="58" Yes="121" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="59" Yes="215" dirYesFrom="right" dirYesTo="left" No="62" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="60" Yes="202" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="61" Yes="202" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="62" Yes="63" dirYesFrom="right" dirYesTo="left" No="69" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="63" Yes="64" dirYesFrom="right" dirYesTo="left" No="65" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="64" Yes="66" dirYesFrom="right" dirYesTo="left" No="202" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="65" Yes="202" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="66" Yes="67" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="67" Yes="201" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="68" Yes="202" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="69" Yes="209" dirYesFrom="right" dirYesTo="left" No="203" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="73" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="76" Yes="226" dirYesFrom="right" dirYesTo="left" No="159" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="77" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="78" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="79" Yes="147" dirYesFrom="right" dirYesTo="left" No="19" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="81" Yes="164" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="82" Yes="83" dirYesFrom="right" dirYesTo="left" No="107" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="83" Yes="85" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="84" Yes="82" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="85" Yes="90" dirYesFrom="right" dirYesTo="left" No="107" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="86" Yes="89" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="87" Yes="91" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="88" Yes="86" dirYesFrom="right" dirYesTo="left" No="89" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="89" Yes="87" dirYesFrom="right" dirYesTo="left" No="107" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="90" Yes="247" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="91" Yes="116" dirYesFrom="right" dirYesTo="left" No="107" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="92" Yes="93" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="93" Yes="94" dirYesFrom="down" dirYesTo="up" No="108" dirNoFrom="right" dirNoTo="down" />
+    <FlowConn From="94" Yes="95" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="95" Yes="108" dirYesFrom="left" dirYesTo="down" />
+    <FlowConn From="97" Yes="10" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="98" Yes="97" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="99" Yes="100" dirYesFrom="right" dirYesTo="left" No="102" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="100" Yes="98" dirYesFrom="right" dirYesTo="left" No="101" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="101" Yes="247" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="102" Yes="247" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="103" Yes="155" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="105" Yes="106" dirYesFrom="down" dirYesTo="up" No="158" dirNoFrom="right" dirNoTo="right" />
+    <FlowConn From="106" Yes="158" dirYesFrom="right" dirYesTo="right" />
+    <FlowConn From="107" Yes="105" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="108" Yes="247" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="109" Yes="229" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="110" Yes="111" dirYesFrom="right" dirYesTo="left" No="114" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="111" Yes="112" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="112" Yes="113" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="113" Yes="107" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="114" Yes="126" dirYesFrom="right" dirYesTo="left" No="79" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="115" Yes="108" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="116" Yes="107" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="117" Yes="118" dirYesFrom="right" dirYesTo="left" No="24" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="118" Yes="119" dirYesFrom="right" dirYesTo="left" No="92" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="119" Yes="92" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="121" Yes="61" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="122" Yes="123" dirYesFrom="right" dirYesTo="left" No="219" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="123" Yes="6" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="124" Yes="125" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="125" Yes="127" dirYesFrom="right" dirYesTo="left" No="107" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="126" Yes="124" dirYesFrom="right" dirYesTo="left" No="125" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="127" Yes="115" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="128" Yes="133" dirYesFrom="right" dirYesTo="left" No="164" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="129" Yes="162" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="130" Yes="129" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="131" Yes="130" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="132" Yes="131" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="133" Yes="132" dirYesFrom="right" dirYesTo="left" No="164" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="134" Yes="164" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="135" Yes="134" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="136" Yes="135" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="137" Yes="136" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="138" Yes="137" dirYesFrom="right" dirYesTo="left" No="164" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="139" Yes="138" dirYesFrom="right" dirYesTo="left" No="164" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="140" Yes="168" dirYesFrom="right" dirYesTo="left" No="81" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="141" Yes="140" dirYesFrom="right" dirYesTo="left" No="81" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="142" Yes="199" dirYesFrom="right" dirYesTo="left" No="200" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="143" Yes="142" dirYesFrom="right" dirYesTo="left" No="202" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="144" Yes="143" dirYesFrom="right" dirYesTo="left" No="202" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="145" Yes="146" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="146" Yes="60" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="147" Yes="148" dirYesFrom="right" dirYesTo="left" No="108" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="148" Yes="149" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="149" Yes="150" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="150" Yes="153" dirYesFrom="right" dirYesTo="left" No="218" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="151" Yes="108" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="152" Yes="108" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="153" Yes="152" dirYesFrom="right" dirYesTo="left" No="108" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="154" Yes="23" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="155" Yes="154" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="156" Yes="157" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="157" Yes="164" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="158" Yes="247" dirYesFrom="left" dirYesTo="right" />
+    <FlowConn From="159" Yes="238" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="160" Yes="164" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="161" Yes="160" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="162" Yes="161" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="163" Yes="156" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="164" Yes="165" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="165" Yes="92" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="166" Yes="163" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="167" Yes="166" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="168" Yes="167" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="169" Yes="170" dirYesFrom="right" dirYesTo="left" No="182" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="170" Yes="171" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="171" Yes="172" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="172" Yes="173" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="173" Yes="174" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="174" Yes="176" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="175" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="176" Yes="175" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="177" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="178" Yes="177" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="179" Yes="178" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="180" Yes="238" dirYesFrom="down" dirYesTo="down" No="179" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="181" Yes="180" dirYesFrom="right" dirYesTo="left" No="238" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="182" Yes="183" dirYesFrom="right" dirYesTo="left" No="186" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="183" Yes="184" dirYesFrom="down" dirYesTo="up" No="181" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="184" Yes="185" dirYesFrom="down" dirYesTo="left" No="181" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="185" Yes="190" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="186" Yes="187" dirYesFrom="right" dirYesTo="left" No="76" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="187" Yes="191" dirYesFrom="down" dirYesTo="left" No="188" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="188" Yes="189" dirYesFrom="right" dirYesTo="left" No="238" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="189" Yes="238" dirYesFrom="down" dirYesTo="down" No="195" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="190" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="191" Yes="192" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="192" Yes="193" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="193" Yes="194" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="194" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="195" Yes="196" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="196" Yes="197" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="197" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="198" Yes="164" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="199" Yes="217" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="200" Yes="164" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="201" Yes="68" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="202" Yes="164" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="203" Yes="237" dirYesFrom="right" dirYesTo="left" No="169" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="204" Yes="202" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="205" Yes="204" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="206" Yes="205" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="207" Yes="206" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="208" Yes="207" dirYesFrom="right" dirYesTo="left" No="238" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="209" Yes="208" dirYesFrom="right" dirYesTo="left" No="73" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="210" Yes="108" dirYesFrom="down" dirYesTo="down" No="151" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="211" Yes="210" dirYesFrom="right" dirYesTo="left" No="108" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="212" Yes="211" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="213" Yes="212" dirYesFrom="down" dirYesTo="up" No="211" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="214" Yes="145" dirYesFrom="right" dirYesTo="left" No="202" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="215" Yes="214" dirYesFrom="right" dirYesTo="left" No="202" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="216" Yes="198" dirYesFrom="right" dirYesTo="left" No="216" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="217" Yes="216" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="218" Yes="108" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="219" Yes="220" dirYesFrom="right" dirYesTo="left" No="7" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="220" Yes="247" dirYesFrom="down" dirYesTo="down" No="221" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="221" Yes="222" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="222" Yes="223" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="223" Yes="225" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="224" Yes="107" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="225" Yes="224" dirYesFrom="right" dirYesTo="left" No="225" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="226" Yes="228" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="227" Yes="77" dirYesFrom="right" dirYesTo="left" No="238" dirNoFrom="down" dirNoTo="down" />
+    <FlowConn From="228" Yes="227" dirYesFrom="right" dirYesTo="left" No="78" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="229" Yes="248" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="230" Yes="231" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="231" Yes="219" dirYesFrom="down" dirYesTo="up" No="231" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="232" Yes="233" dirYesFrom="right" dirYesTo="left" No="2" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="233" Yes="6" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="235" Yes="16" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="236" Yes="235" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="237" Yes="240" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="238" Yes="202" dirYesFrom="up" dirYesTo="down" />
+    <FlowConn From="239" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="240" Yes="241" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="241" Yes="243" dirYesFrom="right" dirYesTo="left" No="241" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="242" Yes="238" dirYesFrom="right" dirYesTo="down" />
+    <FlowConn From="243" Yes="242" dirYesFrom="down" dirYesTo="left" No="239" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="244" Yes="6" dirYesFrom="right" dirYesTo="up" No="232" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="246" Yes="251" dirYesFrom="right" dirYesTo="left" No="249" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="247" Yes="246" dirYesFrom="left" dirYesTo="up" />
+    <FlowConn From="248" Yes="230" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="249" Yes="250" dirYesFrom="right" dirYesTo="left" No="244" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="250" Yes="244" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="251" Yes="253" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="253" Yes="249" dirYesFrom="right" dirYesTo="up" />
+  </FlowConnections>
+  <Wires />
+  <Comments />
+</VelocioNetworks>

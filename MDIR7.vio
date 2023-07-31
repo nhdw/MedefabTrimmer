@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!--Velocio.net-->
+<!--vBuilder Project 1.0-->
+<Tree Default="Flow Chart" iProgramCheckSum="0">
+  <leaf index="0" CANDataRate="rate1MBaud" Type="Ace 1802" bEEPROM_CPU="True" sESub="MDIR7.viof">
+    <serialData alPortsIndex="6" mySerialType="modbus" sSubPort="F0" myBaudRate="rate9600" myParity="None" bRS232or485="False" myRSType="RS232" iStopBits="1" sReceiveDataTagKey="" sSendDataTagKey="" />
+    <SWTK iDebugRunningObject="0" iIndexOfFirstChar="10" iIndexOfFirstFloat="138" iIndexOfFirstPassByRef="138" iIndexOfFirstS16="18" iIndexOfFirstS32="30" iIndexOfFirstU16="10" iNumOf16BitWordsOfStackSpaceUsed="138" iObjectInstances="1" iSubDataBase="0" iUsedBits="35" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="0" iUsedS16="6" iUsedS32="27" iUsedU16="4">
+      <linkedSub iCallStackCount="0" iCallStackCurrent="0" iCallStackFirst="0" iRungFirstIndex="0" iRungLastIndex="213" iSubNumber="0" iTagCount="90" iTagFirstIndex="1" />
+      <PointerData iPtrIndex="1" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ClampTimeout" />
+      <PointerData iPtrIndex="2" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="LocatorSLTimeout" />
+      <PointerData iPtrIndex="3" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="RedFlash" />
+      <PointerData iPtrIndex="4" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ResetTimer" />
+      <PointerData iPtrIndex="5" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="PolishDwell" />
+      <PointerData iPtrIndex="6" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ExCounter" />
+      <PointerData iPtrIndex="7" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="VacuumDelay" />
+      <PointerData iPtrIndex="8" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="StartupDelay" />
+      <PointerData iPtrIndex="9" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="CleanerVacTimer" />
+      <connectionProgramDetails Key="vFactoryPage" TagNumber="35" index="0" mask="65535" />
+      <connectionProgramDetails Key="LightCurtain" TagNumber="3" index="1" mask="1" />
+      <connectionProgramDetails Key="InBitA2" TagNumber="4" index="1" mask="2" />
+      <connectionProgramDetails Key="Servo1Error" TagNumber="5" index="1" mask="4" />
+      <connectionProgramDetails Key="Servo2Error" TagNumber="6" index="1" mask="8" />
+      <connectionProgramDetails Key="SpindleError" TagNumber="7" index="1" mask="16" />
+      <connectionProgramDetails Key="CycleStartButton" TagNumber="8" index="1" mask="32" />
+      <connectionProgramDetails Key="ClampCylHomeSw" TagNumber="9" index="1" mask="64" />
+      <connectionProgramDetails Key="ClampCylSw" TagNumber="10" index="1" mask="128" />
+      <connectionProgramDetails Key="LocatorSlideHome" TagNumber="11" index="1" mask="256" />
+      <connectionProgramDetails Key="LocatorSlideSw" TagNumber="12" index="1" mask="512" />
+      <connectionProgramDetails Key="EstopSig" TagNumber="13" index="1" mask="1024" />
+      <connectionProgramDetails Key="InBitB6" TagNumber="14" index="1" mask="2048" />
+      <connectionProgramDetails Key="Motor1HomeSw" TagNumber="15" index="1" mask="4096" />
+      <connectionProgramDetails Key="Motor2HomeSw" TagNumber="16" index="1" mask="8192" />
+      <connectionProgramDetails Key="VacuumSwitch" TagNumber="18" index="1" mask="32768" />
+      <connectionProgramDetails Key="InBitC5" TagNumber="19" index="2" mask="1" />
+      <connectionProgramDetails Key="InBitC6" TagNumber="20" index="2" mask="2" />
+      <connectionProgramDetails Key="OutBitD1" TagNumber="21" index="3" mask="1" />
+      <connectionProgramDetails Key="OutBitD2" TagNumber="22" index="3" mask="2" />
+      <connectionProgramDetails Key="OutBitD3" TagNumber="23" index="3" mask="4" />
+      <connectionProgramDetails Key="OutBitD4" TagNumber="24" index="3" mask="8" />
+      <connectionProgramDetails Key="CleanerVacRelay" TagNumber="25" index="3" mask="16" />
+      <connectionProgramDetails Key="ClampValve" TagNumber="26" index="3" mask="32" />
+      <connectionProgramDetails Key="K50Red" TagNumber="27" index="3" mask="64" />
+      <connectionProgramDetails Key="K50Green" TagNumber="28" index="3" mask="128" />
+      <connectionProgramDetails Key="K50Yellow" TagNumber="29" index="3" mask="256" />
+      <connectionProgramDetails Key="LocatorValve" TagNumber="30" index="3" mask="512" />
+      <connectionProgramDetails Key="OutBitE5" TagNumber="31" index="3" mask="1024" />
+      <connectionProgramDetails Key="OutBitE6" TagNumber="32" index="3" mask="2048" />
+      <connectionProgramDetails Key="VacuumValve" TagNumber="33" index="3" mask="4096" />
+      <connectionProgramDetails Key="DumpValve" TagNumber="34" index="3" mask="8192" />
+      <connectionProgramDetails Key="SerialRXF-1" TagNumber="2" index="0" mask="2" />
+      <connectionProgramDetails Key="SerialTXF-1" TagNumber="1" index="0" mask="1" />
+      <connectionProgramDetails Key="state" TagNumber="36" index="1" mask="65535" />
+      <connectionProgramDetails Key="StartupDelay" TagNumber="37" index="0" mask="65535" />
+      <connectionProgramDetails Key="ErrorNum" TagNumber="38" index="2" mask="65535" />
+      <connectionProgramDetails Key="Position1" TagNumber="39" index="1" mask="65535" />
+      <connectionProgramDetails Key="HomeSpeed" TagNumber="40" index="2" mask="65535" />
+      <connectionProgramDetails Key="Position2" TagNumber="41" index="3" mask="65535" />
+      <connectionProgramDetails Key="CutterSpinup" TagNumber="42" index="4" mask="65535" />
+      <connectionProgramDetails Key="ClampTimeout" TagNumber="43" index="5" mask="65535" />
+      <connectionProgramDetails Key="LocatorSLTimeout" TagNumber="44" index="6" mask="65535" />
+      <connectionProgramDetails Key="PrecutMvCts" TagNumber="45" index="7" mask="65535" />
+      <connectionProgramDetails Key="Cut1MvCts" TagNumber="46" index="8" mask="65535" />
+      <connectionProgramDetails Key="CutBackMvCts" TagNumber="47" index="9" mask="65535" />
+      <connectionProgramDetails Key="Cut2MvCts" TagNumber="48" index="10" mask="65535" />
+      <connectionProgramDetails Key="CutSpeed" TagNumber="49" index="0" mask="65535" />
+      <connectionProgramDetails Key="PrecutSpeed" TagNumber="50" index="1" mask="65535" />
+      <connectionProgramDetails Key="TargetPos" TagNumber="51" index="11" mask="65535" />
+      <connectionProgramDetails Key="CutCycleCounter" TagNumber="52" index="2" mask="65535" />
+      <connectionProgramDetails Key="CutCyclesReqd" TagNumber="53" index="3" mask="65535" />
+      <connectionProgramDetails Key="ResetTimer" TagNumber="54" index="12" mask="65535" />
+      <connectionProgramDetails Key="SpindleSpeed" TagNumber="55" index="13" mask="65535" />
+      <connectionProgramDetails Key="HomeOffset" TagNumber="56" index="14" mask="65535" />
+      <connectionProgramDetails Key="SpindlePos" TagNumber="57" index="15" mask="65535" />
+      <connectionProgramDetails Key="CycleCounter" TagNumber="58" index="16" mask="65535" />
+      <connectionProgramDetails Key="InBitC3" TagNumber="17" index="1" mask="16384" />
+      <connectionProgramDetails Key="SpindleRPM" TagNumber="59" index="17" mask="65535" />
+      <connectionProgramDetails Key="PartCounter" TagNumber="60" index="18" mask="65535" />
+      <connectionProgramDetails Key="NegCutBack" TagNumber="61" index="19" mask="65535" />
+      <connectionProgramDetails Key="RedFlash" TagNumber="62" index="20" mask="65535" />
+      <connectionProgramDetails Key="PolishDwell" TagNumber="63" index="21" mask="65535" />
+      <connectionProgramDetails Key="PolishTime" TagNumber="64" index="22" mask="65535" />
+      <connectionProgramDetails Key="ExCounter" TagNumber="65" index="23" mask="65535" />
+      <connectionProgramDetails Key="VacuumDelay" TagNumber="66" index="24" mask="65535" />
+      <connectionProgramDetails Key="VacDelayTime" TagNumber="67" index="25" mask="65535" />
+      <connectionProgramDetails Key="RehomeCycleCount" TagNumber="68" index="4" mask="65535" />
+      <connectionProgramDetails Key="RehomeCTS" TagNumber="69" index="5" mask="65535" />
+      <connectionProgramDetails Key="ExternalCounter" TagNumber="70" index="4" mask="1" />
+      <connectionProgramDetails Key="CleanerVacTimer" TagNumber="71" index="26" mask="65535" />
+      <connectionProgramDetails Key="CleanerTime" TagNumber="72" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="73" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="74" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="75" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="76" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="77" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="78" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="79" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="80" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="81" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="82" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="83" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="84" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="85" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="86" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="87" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="88" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="89" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="90" index="5" mask="65535" />
+    </SWTK>
+  </leaf>
+</Tree>
